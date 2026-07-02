@@ -779,7 +779,7 @@ def get_H1() -> GroundBased2G:
         xarm_tilt=-6.195e-4,
         yarm_tilt=1.25e-5,
         elevation=142.554,
-        modes="pc",
+        modes="pcb",
     )
 
 
@@ -794,7 +794,7 @@ def get_L1() -> GroundBased2G:
         xarm_tilt=-3.121e-4,
         yarm_tilt=-6.107e-4,
         elevation=-6.574,
-        modes="pc",
+        modes="pcb",
     )
 
 
@@ -809,7 +809,7 @@ def get_V1() -> GroundBased2G:
         xarm_tilt=0,
         yarm_tilt=0,
         elevation=51.884,
-        modes="pc",
+        modes="pcb",
     )
 
 
@@ -857,6 +857,7 @@ def get_ET() -> list[GroundBased2G]:
                 elevation=elevation,
                 xarm_tilt=xarm_tilt,
                 yarm_tilt=yarm_tilt,
+                modes="pcb",
             )
         )
         # Propagate to next vertex using the spherical forward-azimuth formula.
@@ -892,7 +893,7 @@ def get_CE() -> GroundBased2G:
         xarm_tilt=-6.195e-4,
         yarm_tilt=1.25e-5,
         elevation=142.554,
-        modes="pc",
+        modes="pcb",
     )
 
 
