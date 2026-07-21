@@ -829,7 +829,7 @@ def get_ET() -> list[GroundBased2G]:
     xarm_tilt = 0
     yarm_tilt = 0
     elevation = 51.884
-    length: float = 2e4  # arm length in metres original code 1e4
+    length: float = 1e4  # arm length in metres original code 1e4
 
     a = EARTH_SEMI_MAJOR_AXIS / 1e3  # Numerical instability avoidance
     b = EARTH_SEMI_MINOR_AXIS / 1e3
