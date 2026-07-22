@@ -829,7 +829,7 @@ def get_ET() -> list[GroundBased2G]:
     xarm_tilt = 0
     yarm_tilt = 0
     elevation = 51.884
-    length: float = 1e4  # arm length in metres original code 1e4
+    length: float = 2e4  # arm length in metres original code 1e4
 
     a = EARTH_SEMI_MAJOR_AXIS / 1e3  # Numerical instability avoidance
     b = EARTH_SEMI_MINOR_AXIS / 1e3
@@ -888,7 +888,7 @@ def get_CE() -> GroundBased2G:
         latitude=(46 + 27.0 / 60 + 18.528 / 3600) * DEG_TO_RAD,
         longitude=-(119 + 24.0 / 60 + 27.5657 / 3600) * DEG_TO_RAD,
         xarm_azimuth=125.9994 * DEG_TO_RAD,
-        yarm_azimuth=215.994 * DEG_TO_RAD,
+        yarm_azimuth=215.9994 * DEG_TO_RAD,
         xarm_tilt=-6.195e-4,
         yarm_tilt=1.25e-5,
         elevation=142.554,
