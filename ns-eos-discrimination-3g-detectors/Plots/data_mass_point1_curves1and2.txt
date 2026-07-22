@@ -1,0 +1,40 @@
+# Mass point 1: m1=1.54 Msun, m2=1.232 Msun (q=0.8, M_c=1.1976232319088198 Msun)
+# ET+2CE network, zero-noise injection. DD2-correct recovery arm is SHARED
+# between Curve 1 and Curve 2 (same injected signal, same d_L/SNR grid) --
+# only the wrong-EOS recovery template differs (SFHo vs DD2_eps200).
+#
+# CAVEAT: only the evidence DIFFERENCE (delta_logZ = logZ_correct - logZ_wrong)
+# was retained in this study's working notes for Curve 1 and Curve 2 -- the
+# individual absolute logZ_DD2_true value was not separately preserved, so it
+# cannot be reported here without fabricating a number. If you need the
+# absolute logZ_DD2_true values, they are recoverable from the original
+# jimgw notebook outputs for curves 1-2, not from records available to me.
+#
+# UPDATE (2026-07-19): added the dL=400, 200, 100 Mpc rows below (Curve 1
+# densification points, SNR=352.24/704.49/1408.97). These fill the gap
+# between the dL=1200 grid point and the dL=42 anchor. They come from this
+# session's own dL=400/200/100 DD2-correct + SFHo-wrong notebook runs, not
+# from the original working notes. Curve 2 was never densified, so no
+# dlogZ_C2 values exist for these three rows (marked NA). None of the
+# original 8 rows above/below were modified.
+#
+# Columns:
+#   dL_Mpc              injected luminosity distance [Mpc]
+#   SNR                 network optimal SNR (ET+2CE, zero-noise)
+#   dlogZ_C1_SFHo_wrong      Curve 1: logZ(DD2 true) - logZ(SFHo wrong)
+#   dlogZ_C1_err             1-sigma uncertainty on the above
+#   dlogZ_C2_DD2eps200_wrong Curve 2: logZ(DD2 true) - logZ(DD2_eps200 wrong); NA where not available
+#   dlogZ_C2_err             1-sigma uncertainty on the above; NA where not available
+#
+# dL_Mpc    SNR         dlogZ_C1_SFHo_wrong  dlogZ_C1_err  dlogZ_C2_DD2eps200_wrong  dlogZ_C2_err
+9400.0      14.99       0.69                 0.28          0.60                      0.26
+5600.0      25.16       1.33                 0.28          0.66                      0.31
+4000.0      35.22       2.34                 0.33          0.63                      0.32
+3200.0      44.03       3.07                 0.32          1.13                      0.30
+2400.0      58.70       4.59                 0.37          2.10                      0.36
+1600.0      88.06       8.71                 0.32          3.94                      0.33
+1200.0      117.41      13.84                0.34          5.52                      0.38
+400.0       352.24      114.44               0.42          NA                        NA
+200.0       704.49      450.69               0.43          NA                        NA
+100.0       1408.97     1792.42              0.42          NA                        NA
+42.0        3354.70     10142.31             0.47          4003.09                   0.47

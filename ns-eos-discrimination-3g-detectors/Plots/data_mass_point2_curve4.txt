@@ -1,0 +1,26 @@
+# Mass point 2 (Curve 4, mass-generalization test): m1=1.40 Msun, m2=1.20 Msun
+# (q=0.857143, M_c=1.1276930385 Msun, eta=0.2485207101). ET+2CE network,
+# zero-noise injection. DD2 true, SFHo wrong -- same EOS pairing as Curve 1,
+# different binary mass point. No DD2_eps200 arm was run at this mass point
+# (that comparison, Curve 2, exists only at mass point 1) -- there is no
+# third logZ column here for that reason, not because it was dropped.
+#
+# Columns:
+#   dL_Mpc          injected luminosity distance [Mpc]
+#   SNR             network optimal SNR (ET+2CE, zero-noise)
+#   logZ_DD2_true       absolute log-evidence, DD2 (correct) recovery template
+#   logZ_DD2_true_err   1-sigma nested-sampling evidence uncertainty
+#   logZ_SFHo_wrong     absolute log-evidence, SFHo (wrong) recovery template
+#   logZ_SFHo_wrong_err 1-sigma nested-sampling evidence uncertainty
+#   dlogZ               logZ_DD2_true - logZ_SFHo_wrong
+#   dlogZ_err            1-sigma uncertainty on dlogZ
+#
+# dL_Mpc   SNR         logZ_DD2_true   logZ_DD2_true_err  logZ_SFHo_wrong  logZ_SFHo_wrong_err  dlogZ       dlogZ_err
+1200.0     111.7351    6211.30         0.24               6193.16          0.22                 18.14       0.39
+1600.0     83.8013     3482.12         0.24               3471.21          0.24                 10.91       0.38
+2400.0     55.8676     1533.30         0.29               1528.04          0.24                 5.26        0.33
+3200.0     41.9007     852.95          0.22               849.12           0.21                 3.83        0.32
+4000.0     33.5206     537.58          0.24               535.49           0.23                 2.09        0.32
+5600.0     23.9432     264.06          0.21               262.77           0.26                 1.29        0.31
+9400.0     14.2641     81.64           0.21               81.00            0.19                 0.64        0.30
+42.0       3192.4327   5095764.50      0.30               5083404.84       0.36                 12359.67    0.48

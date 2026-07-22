@@ -1,0 +1,33 @@
+# Curve 3 (EOS true/wrong role swap): SFHo true, DD2 wrong -- mass point 1
+# (m1=1.54 Msun, m2=1.232 Msun, same injected M_c/eta/spins/t_c/phase_c/sky
+# as Curve 1, only the true/wrong EOS assignment is swapped relative to
+# Curve 1). ET+2CE network, zero-noise injection.
+#
+# NOTE the column meaning is swapped relative to the other two files: here
+# SFHo is the TRUE (correct) template and DD2 is the WRONG template --
+# opposite of Curve 1/Curve 4, where DD2 is true and SFHo is wrong. The
+# dlogZ_C1_for_comparison column reproduces Curve 1's dlogZ at the same
+# nominal SNR grid so the role-swap comparison can be read directly off
+# this file without needing the other one.
+#
+# Columns:
+#   dL_Mpc                 injected luminosity distance [Mpc]
+#   SNR                    network optimal SNR (ET+2CE, zero-noise)
+#   logZ_SFHo_true         absolute log-evidence, SFHo (correct) recovery template
+#   logZ_SFHo_true_err     1-sigma nested-sampling evidence uncertainty
+#   logZ_DD2_wrong         absolute log-evidence, DD2 (wrong) recovery template
+#   logZ_DD2_wrong_err     1-sigma nested-sampling evidence uncertainty
+#   dlogZ_C3               logZ_SFHo_true - logZ_DD2_wrong
+#   dlogZ_C3_err           1-sigma uncertainty on dlogZ_C3
+#   dlogZ_C1_for_comparison   Curve 1's dlogZ at the matched SNR (DD2 true vs SFHo wrong)
+#   dlogZ_C1_err
+#
+# dL_Mpc   SNR        logZ_SFHo_true  logZ_SFHo_true_err  logZ_DD2_wrong  logZ_DD2_wrong_err  dlogZ_C3   dlogZ_C3_err  dlogZ_C1_for_comparison  dlogZ_C1_err
+9400.0     14.990     92.79           0.20                92.29           0.21                0.50       0.290         0.69                     0.28
+5600.0     25.162     294.05          0.21                293.36          0.22                0.69       0.304         1.33                     0.28
+4000.0     35.226     596.43          0.22                595.20          0.23                1.23       0.318         2.34                     0.33
+3200.0     44.033     944.32          0.24                942.55          0.22                1.77       0.326         3.07                     0.32
+2400.0     58.71      1696.39         0.24                1692.53         0.21                3.86       0.320         4.59                     0.37
+1600.0     88.07      3848.07         0.23                3839.61         0.28                8.46       0.360         8.71                     0.32
+1200.0     117.42     6862.28         0.29                6847.45         0.28                14.83      0.400         13.84                    0.34
+42.0       3354.88    5627547.24      0.32                5615453.48      0.31                12093.76   0.450         10142.31                 0.47
